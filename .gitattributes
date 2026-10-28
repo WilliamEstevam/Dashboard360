@@ -9,3 +9,4 @@ Dockerfile text eol=lf
 *.svg text eol=lf
 *.jpg binary
 *.gif binary
+*.png binary

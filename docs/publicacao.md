@@ -26,7 +26,7 @@ python scripts/smoke_test.py http://127.0.0.1:8080/index.php
 
 ## Capa e gravação
 
-- [Capa de compartilhamento](images/social-preview.jpg), em 1280 × 640, pronta para a opção **Settings → Social preview** do GitHub.
+- [Capa de compartilhamento](images/social-preview.png), em 1280 × 640, pronta para a opção **Settings → Social preview** do GitHub.
 - [Fonte editável da capa](images/social-preview.svg), que utiliza a captura `painel-controle.jpg` da mesma pasta.
 - [GIF demonstrativo](images/demo.gif), com navegação real em dados sintéticos e duração de 24 segundos.
 
