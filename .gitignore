@@ -1,0 +1,25 @@
+# .gitignore — Dashboard360
+
+# -----------------------------------------------
+# CREDENCIAIS — NUNCA commitar
+# -----------------------------------------------
+config.local.php
+
+# -----------------------------------------------
+# UPLOADS DE UTILIZADORES
+# -----------------------------------------------
+shared/assets/img/avatars/
+shared/assets/img/uploads/
+
+# -----------------------------------------------
+# LOGS E ARQUIVOS TEMPORÁRIOS
+# -----------------------------------------------
+*.log
+*.tmp
+
+# Artefatos de execução e ferramentas locais
+.runtime/
+.env
+.env.*
+!.env.example
+*.zip

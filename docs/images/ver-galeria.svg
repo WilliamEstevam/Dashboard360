@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="252" height="46" viewBox="0 0 252 46" role="img" aria-labelledby="title">
+  <title id="title">Ver galeria completa</title>
+  <rect x="0.5" y="0.5" width="251" height="45" rx="10" fill="#4f46e5" stroke="#818cf8"/>
+  <g fill="none" stroke="#c7d2fe" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="16" y="14" width="19" height="18" rx="3"/>
+    <circle cx="22" cy="20" r="1.5"/>
+    <path d="m18 29 5-5 4 3 4-4 3 3"/>
+  </g>
+  <text x="47" y="28.5" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Ver galeria completa</text>
+  <path d="M222 23h13m-5-5 5 5-5 5" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
