@@ -2,7 +2,7 @@
 .github
 .runtime
 docs
-scripts
+tests
 config.local.php
 .env
 .env.*

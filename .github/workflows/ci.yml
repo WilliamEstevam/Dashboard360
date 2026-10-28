@@ -58,7 +58,7 @@ jobs:
       - name: Verificar rotas, filtros, CSV e formularios
         env:
           PYTHONIOENCODING: utf-8
-        run: python scripts/smoke_test.py
+        run: python tests/smoke_test.py
 
       - name: Mostrar logs em caso de falha
         if: failure()

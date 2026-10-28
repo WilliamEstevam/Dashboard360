@@ -1,6 +1,6 @@
 """Verificação HTTP da demonstração.
 
-Uso: python scripts/smoke_test.py [URL]
+Uso: python tests/smoke_test.py [URL]
 Padrão: http://127.0.0.1:8080/index.php
 """
 import csv
