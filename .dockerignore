@@ -1,0 +1,13 @@
+.git
+.github
+.runtime
+docs
+scripts
+config.local.php
+.env
+.env.*
+shared/assets/img/avatars
+shared/assets/img/uploads
+*.log
+*.tmp
+*.zip

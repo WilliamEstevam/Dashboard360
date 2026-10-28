@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: dashboard360
+    runtime: docker
+    plan: free
+    branch: main
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health.php
+    autoDeployTrigger: checksPass

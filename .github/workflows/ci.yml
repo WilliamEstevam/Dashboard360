@@ -1,0 +1,69 @@
+name: Testes
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: testes-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  demo:
+    name: PHP 8.5 e demonstracao
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Baixar codigo
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Preparar Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
+      - name: Construir a mesma imagem usada na hospedagem
+        run: docker build --tag dashboard360:test .
+
+      - name: Conferir sintaxe PHP
+        run: docker run --rm --entrypoint sh dashboard360:test -c 'find /var/www/html -name "*.php" -print0 | xargs -0 -n1 php -l'
+
+      - name: Iniciar demonstracao
+        run: docker run --detach --name dashboard360 -p 127.0.0.1:8080:10000 dashboard360:test
+
+      - name: Aguardar servidor
+        run: |
+          python - <<'PY'
+          import time
+          import urllib.request
+          for attempt in range(30):
+              try:
+                  with urllib.request.urlopen('http://127.0.0.1:8080/health.php', timeout=2) as response:
+                      if response.status == 200:
+                          break
+              except OSError:
+                  pass
+              time.sleep(1)
+          else:
+              raise SystemExit('O servidor nao iniciou dentro do prazo.')
+          PY
+
+      - name: Verificar rotas, filtros, CSV e formularios
+        env:
+          PYTHONIOENCODING: utf-8
+        run: python scripts/smoke_test.py
+
+      - name: Mostrar logs em caso de falha
+        if: failure()
+        run: docker logs --tail 200 dashboard360 || true
+
+      - name: Encerrar servidor
+        if: always()
+        run: docker rm --force dashboard360 || true
