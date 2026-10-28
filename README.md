@@ -65,4 +65,4 @@ Mantenha o terminal aberto enquanto usa o sistema. Para encerrar o servidor, pre
 
 ---
 
-Desenvolvido por [WilliamEstevam](https://github.com/WilliamEstevam) · [Licença MIT](LICENSE) · [Publicação e testes](docs/publicacao.md).
+Desenvolvido por [WilliamEstevam](https://github.com/WilliamEstevam) · [Licença MIT](LICENSE).

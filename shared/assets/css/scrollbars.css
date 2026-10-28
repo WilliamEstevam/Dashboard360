@@ -1,4 +1,3 @@
-/* Oculta as barras sem bloquear a rolagem de páginas, tabelas e modais. */
 * {
     scrollbar-width: none;
     -ms-overflow-style: none;

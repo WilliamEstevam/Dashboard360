@@ -61,3 +61,5 @@ Consulta de pausas consolidadas por tipo e status, com duração, excesso e aç�
 Área de gestão da conta, informações pessoais e alteração de credenciais.
 
 ![Perfil com informações pessoais e formulário de segurança e acesso](images/perfil.jpg)
+
+[Capa de compartilhamento do repositório](images/social-preview.png)

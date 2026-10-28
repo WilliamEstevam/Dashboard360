@@ -5,7 +5,7 @@
  * Descrição: Entrada da versão de portfólio, autenticação e seleção de módulos.
  */
 
-require_once dirname(__FILE__) . '/app/config.php';
+require_once dirname(__FILE__) . '/shared/config/app.php';
 require_once dirname(__FILE__) . '/shared/config/helpers.php';
 dashboard_secure_session_start();
 dashboard_security_headers();

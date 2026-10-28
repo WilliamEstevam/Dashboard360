@@ -8,7 +8,6 @@ RUN printf 'Listen 10000\n' > /etc/apache2/ports.conf
 
 # Inclui apenas a aplicação pública; configurações locais e uploads não entram.
 COPY index.php health.php ./
-COPY app/ ./app/
 COPY pages/ ./pages/
 COPY shared/ ./shared/
 
