@@ -10,6 +10,7 @@
 - A imagem inclui somente a aplicação. Configurações locais, uploads, capturas e arquivos temporários ficam fora dela.
 - Dados e alterações de visitantes são demonstrativos e ficam na sessão. Reinicializações podem apagar essas sessões.
 - Após 15 minutos sem tráfego, o serviço gratuito pode suspender; o próximo acesso pode levar cerca de um minuto.
+- A instância atual foi criada pela URL pública do repositório. Para atualizar a hospedagem após novos commits, use **Manual Deploy → Deploy latest commit** no Render. Atualizações automáticas exigem conectar o GitHub ao serviço.
 
 [Configurar outra instância gratuita](https://render.com/deploy?repo=https://github.com/WilliamEstevam/Dashboard360) · [Limites do plano gratuito](https://render.com/docs/free)
 
