@@ -1,8 +1,14 @@
 # Dashboard360
 
+[![Testes](https://github.com/WilliamEstevam/Dashboard360/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/WilliamEstevam/Dashboard360/actions/workflows/ci.yml)
+
+[**Acessar demonstração online →**](https://dashboard360-williamestevam.onrender.com)
+
 Plataforma para centralizar indicadores e acompanhar tendências de atendimento em call center.
 
-Desenvolvi o projeto de forma **individual e autônoma**, durante minha passagem como **jovem aprendiz na Tahto**. O sistema entrou em operação em **todo o setor de retenção**, reunindo indicadores antes distribuídos em planilhas Excel com tratamentos diferentes.
+**Desenvolvimento individual · Uso em operação real · Integração com ambiente legado**
+
+Criei o projeto de forma autônoma durante minha passagem como **jovem aprendiz na Tahto**. Ele foi utilizado por **todo o setor de retenção**, centralizando indicadores antes distribuídos em planilhas Excel com tratamentos diferentes.
 
 ## Principais funcionalidades
 
@@ -17,6 +23,12 @@ Desenvolvi o projeto de forma **individual e autônoma**, durante minha passagem
 
 O principal desafio foi desenvolver para o ambiente legado disponível, com **PHP 5.2 e SQL Server**. Escolhi o Tailwind CSS pela facilidade de aplicar e ajustar os detalhes visuais.
 
+## Demonstração em 24 segundos
+
+Entrada no sistema, filtro de equipe, detalhamento de chamadas e cenários do Monitor WFM.
+
+![Demonstração do Dashboard360 com dados fictícios](docs/images/demo.gif)
+
 ## Telas em destaque
 
 | Metas e performance | Monitor WFM |
@@ -30,6 +42,8 @@ O principal desafio foi desenvolver para o ambiente legado disponível, com **PH
 Também desenvolvi a automação em **Python com Playwright** que coletava dados de uma plataforma interna e atualizava o SQL Server **a cada 30 segundos**.
 
 Quando a base deixava de receber atualizações, a tela exibia **“Robô Offline”** e **“Sincronização Pausada”**. O script externo não está no repositório porque depende de acessos e informações sensíveis da integração original.
+
+A demonstração online usa o plano gratuito do Render; o primeiro acesso após um período sem visitas pode levar cerca de um minuto.
 
 ## Como executar
 
@@ -51,4 +65,4 @@ Mantenha o terminal aberto enquanto usa o sistema. Para encerrar o servidor, pre
 
 ---
 
-Desenvolvido por [WilliamEstevam](https://github.com/WilliamEstevam) · [Licença MIT](LICENSE).
+Desenvolvido por [WilliamEstevam](https://github.com/WilliamEstevam) · [Licença MIT](LICENSE) · [Publicação e testes](docs/publicacao.md).

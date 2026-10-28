@@ -36,7 +36,7 @@ jobs:
         run: docker run --rm --entrypoint sh dashboard360:test -c 'find /var/www/html -name "*.php" -print0 | xargs -0 -n1 php -l'
 
       - name: Iniciar demonstracao
-        run: docker run --detach --name dashboard360 -p 127.0.0.1:8080:10000 dashboard360:test
+        run: docker run --detach --tmpfs /tmp --name dashboard360 -p 127.0.0.1:8080:10000 dashboard360:test
 
       - name: Aguardar servidor
         run: |

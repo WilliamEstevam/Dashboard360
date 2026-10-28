@@ -4,7 +4,8 @@ services:
     runtime: docker
     plan: free
     branch: main
+    region: virginia
     dockerfilePath: ./Dockerfile
     dockerContext: .
     healthCheckPath: /health.php
-    autoDeployTrigger: checksPass
+    autoDeployTrigger: commit
